@@ -95,6 +95,7 @@ $ cd Travel_Monkey
 $ npm i
 
 ```
+
 > 安装完成之后，项目根目录下会看到多出了```node_modules```文件.
 
 * 项目运行
@@ -169,11 +170,26 @@ Starting the development server...
 
 
 
-### 后台服务器相关的函数
+### 后台服务器相关的函数(暂不开源)
 
 * story_happen() 是从服务器发送跟踪猴子旅行故事请求的函数
 
 * get_monkey_status() 是从服务器中发送返回猴子旅行状态的函数
+
+* go_home() 新版本为了更好的和用户进行交互，新增强制让猴子回家功能
+
+## 相关优化([相比web版本](https://github.com/MrPaoBrother/Travel_Monkey/blob/master/README.md))
+
+### 功能方面
+   * 新增呼唤猴子回家功能
+   * 修改猴子出去要和主人打招呼功能
+   * 新增新场景和朋友
+### 技术优化
+   * 图片渲染速度提升50%
+   * 链数据不稳定，新增降级方案
+   * 部分图片重新设计优化
+   * 重构旅行途中地图功能代码
+
 
 ## 效果展示
 
