@@ -16,7 +16,7 @@
 
     **Neuron** 是一个 DApp 浏览器和一个支持 AppChain 和以太坊的区块链钱包。构建在 AppChain 或多个 AppChains 之上的 DApps 可以在 Neuron 中使用。用户可以通过区块链获得安全和无缝的交互体验。
 
-* 游戏体验地址: http://www.yimixiaoyuan.top/ (后面有具体的打开方法)
+* 游戏体验地址: http://www.yimixiaoyuan.top/ (ps. PC上无法运行，该版本专门为移动端设计,后面有具体的打开方法)
 
 ## 运行环境
 
