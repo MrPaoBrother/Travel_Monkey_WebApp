@@ -201,11 +201,8 @@ Starting the development server...
 ## 效果展示
 
 * 登录时会显示当前已经存在的猴子数量
-<div align=center>
 
-<img width="150" height="150" src="readme_images/0.jpeg" />
-
-</div>
+<img width="30%" height="30%" src="readme_images/0.jpeg" />
 
 ![猴子数量](readme_images/0.jpeg "猴子数量")
 
