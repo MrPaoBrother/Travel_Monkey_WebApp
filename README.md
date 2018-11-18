@@ -259,7 +259,9 @@ Starting the development server...
 <img width="30%" height="30%" src="readme_images/pc.jpeg" />
 
 ## 参考资料
+
 [1] [Nervos AppChain 文档](https://docs.nervos.org/nervos-appchain-docs/#/)
+
 [2] [Nervos Neuron 钱包](https://mp.weixin.qq.com/s/U7JK_vpIzVLCwv99cmxPAA)
 
 
