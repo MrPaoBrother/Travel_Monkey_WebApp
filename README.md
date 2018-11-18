@@ -39,7 +39,7 @@
    * 首先进入```contracts```目录, 我们看到有五个文件
    
    ```bash
-    $ cd Travel_Monkey/src/contracts
+    $ cd Travel_Monkey_WebApp_WebApp/src/contracts
         ├── compiled.js
         ├── deploy.js
         ├── CoreContract.sol
@@ -64,7 +64,7 @@ $ node deploy.js
    
 ## Nervos Appchain上自定义配置
 
-   * 之后我们在```Travel_Monkey/src/config.js```文件中修改自己的配置信息以及
+   * 之后我们在```Travel_Monkey_WebApp/src/config.js```文件中修改自己的配置信息以及
    使用哪条公链的信息,这里使用的是```http://121.196.200.225:1337```
    
    ```js
@@ -87,9 +87,9 @@ $ node deploy.js
 * 项目克隆到本地
 
 ```bash
-$ git clone https://github.com/MrPaoBrother/Travel_Monkey.git
+$ git clone https://github.com/MrPaoBrother/Travel_Monkey_WebApp.git
 
-$ cd Travel_Monkey
+$ cd Travel_Monkey_WebApp
 ```
 
 * 安装相关依赖
