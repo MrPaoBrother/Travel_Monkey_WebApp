@@ -203,7 +203,7 @@ Starting the development server...
 * 登录时会显示当前已经存在的猴子数量
 <div align=center>
 
-    <img width="150" height="150" src="readme_images/0.jpeg" />
+<img width="150" height="150" src="readme_images/0.jpeg" />
 
 </div>
 
