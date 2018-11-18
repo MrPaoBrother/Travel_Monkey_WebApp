@@ -34,7 +34,7 @@
 
 ps. 也能通过二维码下载
 
-<img width="30%" height="30%" src="readme_images/neuron_code.tiff" />
+<img width="30%" height="30%" src="readme_images/neuron_code.jpg" />
 
 ## Nervos Appchain上部署合约
 
@@ -123,7 +123,7 @@ Starting the development server...
 <img width="30%" height="30%" src="readme_images/Neuron.jpg" />
 
 
-* 最后打开浏览器运行 ```http://localhost:3000/``` 或者 图片中提到的体验地址: ```http://www.yimixiaoyuan.top/```
+* 最后打开钱包中的浏览器运行 ```http://localhost:3000/``` 或者 图片中提到的体验地址: ```http://www.yimixiaoyuan.top/```
 
 
 ## 项目说明
