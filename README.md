@@ -204,55 +204,59 @@ Starting the development server...
 
 <img width="30%" height="30%" src="readme_images/0.jpeg" />
 
-![猴子数量](readme_images/0.jpeg "猴子数量")
-
 * 领取猴子
 
-![领取猴子](readme_images/1.jpeg "领取猴子")
+<img width="30%" height="30%" src="readme_images/1.jpeg" />
+
 
 * 游戏商城，点击物品直接购买
 
-![游戏商城](readme_images/market.jpeg "游戏商城")
+<img width="30%" height="30%" src="readme_images/market.jpeg" />
+
 
 * 玩家的背包
 
-![玩家的背包](readme_images/bag.jpeg "玩家的背包")
+<img width="30%" height="30%" src="readme_images/bag.jpeg" />
+
 
 * 购买前的猴子
 
-![购买前的猴子](readme_images/bit0.jpeg "购买前的猴子")
+<img width="30%" height="30%" src="readme_images/bit0.jpeg" />
+
 
 * 购买后猴子穿上了衣服
 
-![购买后猴子穿上了衣服](readme_images/bit1.jpeg "购买后猴子穿上了衣服")
+<img width="30%" height="30%" src="readme_images/bit1.jpeg" />
+
 
 * 香蕉树上有香蕉时，可以点击香蕉收割
 
-![香蕉树上有香蕉时](readme_images/tree1.jpeg "香蕉树上有香蕉时")
+<img width="30%" height="30%" src="readme_images/tree1.jpeg" />
 
 * 香蕉被收割
 
-![香蕉被收割](readme_images/tree2.jpeg "香蕉被收割")
+<img width="30%" height="30%" src="readme_images/tree2.jpeg" />
 
 * 可以通过充值获取更多香蕉
 
-![可以通过充值获取更多香蕉](readme_images/vip.jpeg "可以通过充值获取更多香蕉")
+<img width="30%" height="30%" src="readme_images/vip.jpeg" />
+
 
 * 小猴子想旅行了，支付一点旅费
 
-![小猴子想旅行了](readme_images/goout.jpeg "小猴子想旅行了")
+<img width="30%" height="30%" src="readme_images/goout.jpeg" />
 
 * 小猴子想回家了，支付一点旅费
 
-![小猴子想回家了](readme_images/gohome.jpeg "小猴子想回家了")
+<img width="30%" height="30%" src="readme_images/gohome.jpeg" />
 
 * 小猴子旅行时寄回来的照片
 
-![小猴子旅行时寄回来的照片](readme_images/picwall.jpeg "小猴子旅行时寄回来的照片")
+<img width="30%" height="30%" src="readme_images/picwall.jpeg" />
 
 * 小猴子在用电脑看什么
 
-![小猴子在用电脑看什么](readme_images/pc.jpeg "小猴子在用电脑看什么")
+<img width="30%" height="30%" src="readme_images/pc.jpeg" />
 
 ## 参考资料
 [1] [Nervos AppChain 文档](https://docs.nervos.org/nervos-appchain-docs/#/)
