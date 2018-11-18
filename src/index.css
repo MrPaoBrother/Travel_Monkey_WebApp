@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#modal-root {
+    position: relative;
+    z-index: 999;
+}
+
+
+@-moz-keyframes tad {
+    0%, 50% {
+        -moz-transform: scale(1) rotate(0);
+    }
+    25% {
+        -moz-transform: scale(1) rotate(-3deg);
+    }
+    75% {
+        -moz-transform: scale(1) rotate(3deg);
+    }
+    100%{
+        -moz-transform:scale(1) rotate(0);}
+}
+
+@keyframes tad {
+    0%, 50% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1) rotate(-3deg);
+    }
+    75% {
+        transform: scale(1) rotate(3deg);
+    }
+    100%{
+        transform:scale(1) rotate(0);}
+}
+
+/*img{*/
+  /*animation: tad 8.5s infinite linear both;*/
+
+/*}*/
+
+/*.bg_frontbg{*/
+    /*-webkit-animation: tad 0.5s infinite ease both;*/
+    /*-moz-animation: tad 0.5s infinite ease both;*/
+
+/*}*/
+
+/*.bg_frontbg img {*/
+    /*-webkit-animation: tad 0.5s infinite ease both;*/
+    /*-moz-animation: tad 0.5s infinite ease both;*/
+/*}*/

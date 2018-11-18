@@ -1,0 +1,20 @@
+.confirm__button--primary {
+    display: block;
+    margin: 3.8vh 0;
+    width: 100%;
+    border: none;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background: #fe792b;
+    box-shadow: 0 0 10px 0 #fe792b;
+}
+
+.confirm__button--disabled {
+    color: #aaa !important;
+    background: #eee !important;
+    box-shadow: 0 0 10px 0 #eee !important;
+}

@@ -2,20 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3812c6c-d620-4aa9-a942-887009943ffe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/bag.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/bit0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/bit1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/gohome.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/goout.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/market.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/pc.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/picwall.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/tree1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/tree2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme_images/vip.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/cssresets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad001-l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad001-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad002-l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad002-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad003-l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad003-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ad003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app-l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app-l@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app-m@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/app@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cert1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/cert2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Bag.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Bed.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Market.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Monkey.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Name.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PC.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PicWall.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Quilt.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Store.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Submit.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Tree.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Vip.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Wallet.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/bag.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/bed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/market.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/monkey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/name.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/pc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/pic_wall.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/quilt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/store.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/submit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/style/wallet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/homebak.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Home/indexbak.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/CoreContract.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/chain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/compiled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/deploy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contracts/transaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bag-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bag_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/banana_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bed_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bg-all-nobannana-jpeg_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bg_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bg_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_0_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_0_0_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_0_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_0_1_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_stand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bit_stand_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/confirmation_window.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/desk_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/end.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/end.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/fellow_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/friend_bear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/friend_squirrel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/frontbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/frontbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/frontbg_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goHome_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/goods5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/interface_blacken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/load bar_bitmonkey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/load bar_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/load bar_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/load bar_word_load.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market-confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market-pocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market-priceban.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market_bag_m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market_bag_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/market_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/monkey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/nextpage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pc_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic-wall-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic-wall-bg_empety.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic_wall_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/price.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/quilt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/quilt_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sc_bear_sky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sc_bear_snow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sc_monkey alone_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sc_monster-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sc_squirrel_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/top-up_+.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/top-up_-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tree_hasfruit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tree_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tree_nofruit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vip_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vip_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/wallet_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modalStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nervos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simpleStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/mySaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,23 +185,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpeg" value="1" />
+          <entry key="js" value="1" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
+          <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="417" />
+          <entry key="md" value="441" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="417" />
+          <entry key="Markdown" value="441" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +214,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="314">
-                <caret line="226" column="46" selection-start-line="226" selection-start-column="46" selection-end-line="226" selection-end-column="46" />
+              <first_editor relative-caret-position="1177">
+                <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
               </first_editor>
               <second_editor />
             </state>
@@ -91,6 +240,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="76" />
     <option name="y" value="23" />
@@ -110,11 +264,6 @@
               <item name="Travel_Monkey_WebApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="Travel_Monkey_WebApp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Travel_Monkey_WebApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Travel_Monkey_WebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="readme_images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -127,9 +276,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/readme_images" />
     </key>
   </component>
@@ -155,12 +306,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542520763813</updated>
-      <workItem from="1542520766093" duration="3068000" />
+      <workItem from="1542520766093" duration="3730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3068000" />
+    <option name="totallyTimeSpent" value="3730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="23" width="1297" height="877" extended-state="0" />
@@ -171,7 +322,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -195,11 +346,14 @@
     <entry file="file://$PROJECT_DIR$/readme_images/vip.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="314">
-            <caret line="226" column="46" selection-start-line="226" selection-start-column="46" selection-end-line="226" selection-end-column="46" />
+          <first_editor relative-caret-position="1177">
+            <caret line="260" lean-forward="true" selection-start-line="260" selection-end-line="260" />
           </first_editor>
           <second_editor />
         </state>

@@ -32,13 +32,15 @@
    
    * 首先把自己写好的```sol```文件，在[Remix](https://remix.ethereum.org/)上调试好，拿到自己的
      ```abi```和```bytecode```
-   * 首先进入```contracts```目录, 我们看到有三个文件
+   * 首先进入```contracts```目录, 我们看到有五个文件
    
    ```bash
     $ cd Travel_Monkey/src/contracts
         ├── compiled.js
         ├── deploy.js
-        └── transaction.js
+        ├── CoreContract.sol
+        ├── transaction.js
+        └── chain.js
    ```
    * 我们将之前得到的abi和byte_code填入compiled.js文件中,然后exports出来:
    
@@ -245,6 +247,10 @@ Starting the development server...
 * 小猴子旅行时寄回来的照片
 
 ![小猴子旅行时寄回来的照片](readme_images/picwall.jpeg "小猴子旅行时寄回来的照片")
+
+* 小猴子在用电脑看什么
+
+![小猴子在用电脑看什么](readme_images/pc.jpeg "小猴子在用电脑看什么")
 
 ## 参考资料
 [1] [Nervos AppChain 文档](https://docs.nervos.org/nervos-appchain-docs/#/)

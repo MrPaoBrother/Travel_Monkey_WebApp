@@ -1,0 +1,27 @@
+@keyframes bit {
+    0% {
+        -moz-transform: scale(1);
+    }
+    10%, 20% {
+        -moz-transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -moz-transform: scale(1.2) rotate(3deg);
+    }
+    40%, 60%, 80%, 100% {
+        -moz-transform: scale(1.2) rotate(-3deg);
+    }
+    /*100%{-moz-transform:scale(1) rotate(0);}*/
+}
+
+
+/*.monkey{
+  -webkit-animation: tada 1s infinite ease both;
+  -moz-animation: tada 1s infinite ease both;
+
+	position: absolute;
+	left: 200px;
+	bottom: 0
+}*/
+
+

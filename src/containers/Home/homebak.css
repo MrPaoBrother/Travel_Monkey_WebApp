@@ -1,0 +1,345 @@
+@media only screen and (min-width: 31em) {
+    .stage {
+
+        width: 100%;
+    }
+
+    .bg {
+
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        background-size: cover;
+        /*background-size：100% 100%;*/
+    }
+
+    .bg_bed {
+        position: absolute;
+        left: 88px;
+        top: 2px;
+        pointer-events: none;
+    }
+
+    .bg_tree {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .bg_bit {
+        position: absolute;
+        left: 770px;
+        top: 450px;
+        pointer-events: none;
+    }
+
+    .bg_frontbg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+
+    .bg_quilt {
+        position: absolute;
+        left: 20%;
+        top: 58%;
+    }
+
+    .bg_pc {
+        position: absolute;
+        left: 48%;
+        top: 49%;
+    }
+
+    .bag-button {
+        position: absolute;
+        left: 28%;
+        top: 1%;
+    }
+
+    .wallet-button {
+        position: absolute;
+        left: 20%;
+        top: 4%;
+        font-size: 50px;
+    }
+
+    .market-button {
+        position: absolute;
+        left: 10%;
+        top: 4%;
+    }
+
+    .market-bg {
+        overflow: hidden;
+        position: fixed;
+        /*width: 100%;*/
+        height: 100%;
+        background: url("../../images/market-bg.png") no-repeat;
+        /*background-size: cover;*/
+    }
+
+    /*.name-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/name-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.wallet-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/wallet-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+    /*}*/
+    .bag-bg {
+        overflow: hidden;
+        position: fixed;
+        /*width: 100%;*/
+        height: 100%;
+        background: url("../../images/bag-bg.png") no-repeat;
+        /*background-size: cover;*/
+    }
+
+    .pic_wall-bg {
+
+        overflow: hidden;
+        position: fixed;
+        /*width: 100%;*/
+        height: 100%;
+
+        overflow: scroll;
+        /*background: url("../../images/pic-wall-bg.png") no-repeat;*/
+        /*background-size: cover;*/
+
+    }
+
+    .market-title {
+        position: absolute;
+        top: 0;
+        left: 400px;
+        font-size: 40px;
+    }
+
+    .pic_wall_bg_l {
+        width: 400px;
+        height: 200px;
+    }
+
+
+    .thing-bg {
+        flex-direction: column;
+        /*border: 1px solid black;*/
+        width: 400px;
+        height: 200px;
+        margin-bottom: 100px;
+        align-items: center;
+        align-self: center;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .thing-container{
+        margin-left: 350px;
+        margin-top:200px;
+        flex-direction: row;
+        /*border: 1px solid black;*/
+        width: 1400px;
+        align-items: center;
+        align-self: center;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 30em) {
+    /*手机端*/
+    .stage{
+        width: 100%;
+    }
+    .ui_button{
+        width: 14.5%;
+    }
+
+    .bg {
+        width: 100%;
+    }
+
+    .pic_wall_bg_l{
+        position: absolute;
+        left: 21%;
+        top: 85%;
+    }
+
+    .bg_bed{
+        position: absolute;
+        left: 5%;
+        top: 42%;
+        width: 73%;
+        pointer-events: none;
+    }
+
+    .bg_tree{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        width: 80%;
+    }
+    .bg_banana{
+        position: absolute;
+        /* right: 0; */
+        top: 50%;
+        left: 50%;
+        width: 20%;
+    }
+
+    .bg_bit{
+        position: absolute;
+        left: 38%;
+        top: 60%;
+        width: 22%;
+        pointer-events: none;
+    }
+
+    .bg_frontbg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+
+    .bg_quilt{
+        position: absolute;
+        width: 54%;
+        left: 14%;
+        top: 72%;
+    }
+
+    .bg_pc{
+        position: absolute;
+        left: 60%;
+        top: 65%;
+        width: 17%;
+    }
+
+    .bag-button{
+        position: absolute;
+        right: 3%;
+        top: 1%;
+    }
+
+    .wallet-button{
+        position: absolute;
+        left: 4%;
+        top: 1%;
+        font-size: 37px;
+    }
+
+    .market-button{
+        position: absolute;
+        right: 3%;
+        top: 85%;
+    }
+
+    .market-bg {
+        overflow: hidden;
+        position: fixed;
+        /*width: 100%;*/
+        height: 100%;
+        background: url("../../images/market-bg.png") no-repeat;
+        /*background-size: cover;*/
+    }
+    /*.name-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/name-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.wallet-bg {*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: url("../../public/images/wallet-bg.png") no-repeat;*/
+    /*background-size: cover;*/
+    /*}*/
+    .bag-bg {
+        overflow: hidden;
+        position: fixed;
+        /*width: 100%;*/
+        height: 100%;
+        background: url("../../images/bag-bg.png") no-repeat;
+        /*background-size: cover;*/
+    }
+
+    .pic_wall-bg{
+
+        overflow: hidden;
+        /*position: fixed;*/
+        /*width: 100%;*/
+        height: 100%;
+
+        overflow:scroll;
+        /*background: url("../../images/pic-wall-bg.png") no-repeat;*/
+        /*background-size: cover;*/
+
+    }
+    .market-title{
+        position: absolute;
+        top:0;
+        left:400px;
+        font-size: 40px;
+    }
+    .vip_button{
+        position: absolute;
+        top: 85%;
+        right: 19%;
+    }
+    .goHome_button{
+        position: absolute;
+        top: 1%;
+        right: 19%;
+    }
+
+
+    .thing-bg {
+        flex-direction: column;
+        /*border: 1px solid black;*/
+        width: 20%;
+        height: 20%;
+        margin-bottom: 1%;
+        align-items: center;
+        align-self: center;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .thing-container{
+        flex-direction: row;
+        /*border: 1px solid black;*/
+        width: 100%;
+        align-items: center;
+        align-self: center;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+.text_button{
+    position: fixed;
+    bottom: 0;
+}
+.text_button2{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
