@@ -16,17 +16,25 @@
 
     **Neuron** 是一个 DApp 浏览器和一个支持 AppChain 和以太坊的区块链钱包。构建在 AppChain 或多个 AppChains 之上的 DApps 可以在 Neuron 中使用。用户可以通过区块链获得安全和无缝的交互体验。
 
+* 游戏体验地址: http://www.yimixiaoyuan.top/ (后面有具体的打开方法)
+
 ## 运行环境
 
 * MacOs 10.14
 * Node  10.10.0
 * Npm   6.4.1
 * Vim   8.0
+* Android 8.0
 
 ## 安装
 
 * [node安装](https://nodejs.org/en/download/)
 * [npm安装](https://www.npmjs.com/)
+* [Neuron安装](https://github.com/cryptape/neuron-android/releases/download/0.6.5/neuron_v0.6.5.181108.apk)
+
+ps. 也能通过二维码下载
+
+<img width="30%" height="30%" src="readme_images/neuron_code.tiff" />
 
 ## Nervos Appchain上部署合约
 
@@ -110,7 +118,12 @@ Starting the development server...
 
 > 可能会看到一堆的warning， 没关系， 只要没有Error就行, 有一些是对依赖库版本的警告
 
-* 最后打开浏览器运行 ```http://localhost:3000/```
+* 打开Neuron钱包,进入如下界面:
+
+<img width="30%" height="30%" src="readme_images/Neuron.jpg" />
+
+
+* 最后打开浏览器运行 ```http://localhost:3000/``` 或者 图片中提到的体验地址: ```http://www.yimixiaoyuan.top/```
 
 
 ## 项目说明
