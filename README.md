@@ -228,6 +228,11 @@ ps.保证手机和电脑在同一个局域网中
 <img width="30%" height="30%" src="readme_images/1.jpeg" />
 
 
+* 游戏商城，点击物品直接购买
+
+<img width="30%" height="30%" src="readme_images/market.jpeg" />
+
+
 * 玩家的背包
 
 <img width="30%" height="30%" src="readme_images/bag.jpeg" />
