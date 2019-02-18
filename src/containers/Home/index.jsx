@@ -66,7 +66,7 @@ class Home extends React.Component {
                 this._checkWalkout()
             }, timeToGo)
         } else if (this.props.monkey.state === false) {
-            let timeToBack = Math.floor(Math.random() * 10 + 10) * 1000;
+            let timeToBack = Math.floor(Math.random() * 10 + 10) * 10000;
             setTimeout(() => {
                 this._backHome()
             }, timeToBack)
