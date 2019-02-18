@@ -1,10 +1,10 @@
 {
-  "name": "first_forever",
+  "name": "PKUChain",
   "version": "0.1.0",
   "private": true,
-  "homepage": "first-forever",
+  "homepage": "PKUChain",
   "dependencies": {
-    "@nervos/chain": "^0.18",
+    "@cryptape/cita-sdk": "^0.21.0-0.21.0-alpha.3.0",
     "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
     "fetch-jsonp": "^1.1.3",

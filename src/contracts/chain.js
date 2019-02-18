@@ -1,20 +1,18 @@
-import {abi, bytecode} from "../contracts/compiled";
+import {abi} from "../contracts/compiled";
 
 const {
     contractAddress
 } = require('../config')
 
-const nervos = require("../nervos");
+const {
+    REACT_APP_RUNTIME
+  } = process.env
+const cita = require('../cita')
 const transaction = require("./transaction");
 
-export const getAbi = function (contractAddress) {
-    return nervos.appchain.getAbi(contractAddress);
-};
-
 export const getContract = function (abi, contractAddress) {
-    return new nervos.appchain.Contract(abi, contractAddress);
+    return new cita.base.Contract(abi, contractAddress)
 };
-
 
 export const getTokenContract = function () {
     return getContract(abi, contractAddress);
@@ -22,26 +20,25 @@ export const getTokenContract = function () {
 
 
 export const getTX = (m) =>
-    nervos.appchain.getBlockNumber().then(current => {
-        // const tx = {
-        //   ...transaction,
-        //   from: "your address",
-        //   validUntilBlock: +current + 88,
-        //   privateKey:
-        //     "your private key"
-        // };
-        let tx = {
-            ...transaction,
-            from: window.neuron.getAccount(),
-            validUntilBlock: +current + 88
-        };
-        if (m !== 0) {
-            tx = {
-                ...tx,
-                value: '0x0' + m,
-            };
-        }
-        return tx;
+    cita.base
+    .getBlockNumber()
+    .then(current => {
+    let tx = {
+        ...transaction,
+        validUntilBlock: +current + 88,
+    }
+    tx.from =
+        REACT_APP_RUNTIME === 'web' ?
+        cita.base.accounts.wallet[0].address :
+        REACT_APP_RUNTIME === 'cita-web-debugger' ?
+            cita.base.defaultAccount :
+            REACT_APP_RUNTIME === 'cyton' ?
+            window.cyton.getAccount() : ''
+    // TODO 需要判断是否输入规范
+    if (m !== 0) {
+        tx.value = m;
+    }
+    return tx
     });
 
 // 0-0 获取猴子数量 n-1
@@ -49,7 +46,7 @@ export const getMonkeycount = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getMonkeycount()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n - 1))
             .catch(err => reject(err));
     });
@@ -61,7 +58,7 @@ export const checkFirst = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.checkFirst()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(!n))
             .catch(err => reject(err));
     });
@@ -73,7 +70,7 @@ export const getBananacount = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getBananacount()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -85,7 +82,7 @@ export const getMonkey = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getMonkey()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -96,7 +93,7 @@ export const getowner2picture = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getowner2picture()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -107,7 +104,7 @@ export const getPicturelength = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getPicturelength()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -118,7 +115,7 @@ export const getPicture = async function (i) {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getPicture(i)
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -129,7 +126,7 @@ export const getowner2product = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getowner2product()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -140,7 +137,7 @@ export const getProductlength = async function () {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getProductlength()
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
@@ -151,12 +148,11 @@ export const getProduct = async function (i) {
     return await new Promise((resolve, reject) => {
         getTokenContract()
             .methods.getProduct(i)
-            .call({from: window.neuron.getAccount()})
+            .call({from: window.cyton.getAccount()})
             .then(n => resolve(n))
             .catch(err => reject(err));
     });
 };
-
 // 3-0 解放猴子
 export const freeMonkey = async function () {
     return await new Promise((resolve, reject) => {
@@ -165,50 +161,6 @@ export const freeMonkey = async function () {
                 .methods.freeMonkey()
                 .send(tx)
                 .then(res => {
-                    alert(JSON.stringify(res));
-                    let hash;
-                    if (JSON.stringify(res).indexOf("hash") !== -1) {
-                        hash = res.hash;
-                    } else {
-                        hash = res;
-                    }
-                    alert(hash)
-                    if (hash) {
-                        window.nervos.listeners
-                            .listenToTransactionReceipt(hash)
-                            .then(receipt => {
-                                console.log(receipt);
-                                if (!receipt.errorMessage) {
-                                    resolve(receipt);
-                                } else {
-                                    reject(receipt.errorMessage);
-                                }
-                            })
-                            .catch(err => {
-                                console.log(err);
-                                reject(err);
-                            });
-                    } else {
-                        reject("No Transaction Hash Received");
-                    }
-                })
-                .catch(err => {
-                    alert(err);
-                    resolve(err.errorMessage);
-                });
-        });
-    });
-};
-
-// 3-1 买香蕉
-export const addBanana = async function (n) {
-    return await new Promise((resolve, reject) => {
-        getTX(n + 1).then(tx => {
-            getTokenContract()
-                .methods.addBanana(n)
-                .send(tx)
-                .then(res => {
-                    alert(JSON.stringify(res));
                     let hash;
                     if (JSON.stringify(res).indexOf("hash") !== -1) {
                         hash = res.hash;
@@ -216,49 +168,8 @@ export const addBanana = async function (n) {
                         hash = res;
                     }
                     if (hash) {
-                        window.nervos.listeners
-                            .listenToTransactionReceipt(hash)
-                            .then(receipt => {
-                                console.log(receipt);
-                                if (!receipt.errorMessage) {
-                                    resolve(receipt);
-                                } else {
-                                    reject(receipt.errorMessage);
-                                }
-                            })
-                            .catch(err => {
-                                alert(err);
-                                reject(err);
-                            });
-                    } else {
-                        reject("No Transaction Hash Received");
-                    }
-                })
-                .catch(err => {
-                    alert(err);
-                    resolve(err.errorMessage);
-                });
-        });
-    });
-};
-
-// 3-2 收割香蕉
-export const getBananaFromTree = async function () {
-    return await new Promise((resolve, reject) => {
-        getTX(0).then(tx => {
-            getTokenContract()
-                .methods.getBananaFromTree()
-                .send(tx)
-                .then(res => {
-                    alert('getBananaFromTree suc' + JSON.stringify(res));
-                    let hash;
-                    if (JSON.stringify(res).indexOf("hash") !== -1) {
-                        hash = res.hash;
-                    } else {
-                        hash = res;
-                    }
-                    if (hash) {
-                        window.nervos.listeners
+                        alert('主人，你好！以后请多多指教~~  =￣ω￣=')
+                        cita.listeners
                             .listenToTransactionReceipt(hash)
                             .then(receipt => {
                                 console.log(receipt);
@@ -277,7 +188,91 @@ export const getBananaFromTree = async function () {
                     }
                 })
                 .catch(err => {
-                    alert('getBananaFromTree fail' + err);
+                    alert(err.message);
+                    resolve(err.errorMessage);
+                });
+        });
+    });
+};
+
+// 3-1 买香蕉
+export const addBanana = async function (n) {
+    return await new Promise((resolve, reject) => {
+        getTX(n).then(tx => {
+            getTokenContract()
+                .methods.addBanana(n)
+                .send(tx)
+                .then(res => {
+                    let hash;
+                    if (JSON.stringify(res).indexOf("hash") !== -1) {
+                        hash = res.hash;
+                    } else {
+                        hash = res;
+                    }
+                    if (hash) {
+                        alert('购买成功！')
+                        cita.listeners
+                            .listenToTransactionReceipt(hash)
+                            .then(receipt => {
+                                console.log(receipt);
+                                if (!receipt.errorMessage) {
+                                    resolve(receipt);
+                                } else {
+                                    reject(receipt.errorMessage);
+                                }
+                            })
+                            .catch(err => {
+                                alert('listenToTransactionReceipt' + err);
+                                reject(err);
+                            });
+                    } else {
+                        reject("No Transaction Hash Received");
+                    }
+                })
+                .catch(err => {
+                    alert(err.message);
+                    resolve(err.errorMessage);
+                });
+        });
+    });
+};
+
+// 3-2 收割香蕉
+export const getBananaFromTree = async function () {
+    alert("收获香蕉会收取小额的手续费哦")
+    return await new Promise((resolve, reject) => {
+        getTX(0).then(tx => {
+            getTokenContract()
+                .methods.getBananaFromTree()
+                .send(tx)
+                .then(res => {
+                    let hash;
+                    if (JSON.stringify(res).indexOf("hash") !== -1) {
+                        hash = res.hash;
+                    } else {
+                        hash = res;
+                    }
+                    if (hash) {
+                        cita.listeners
+                            .listenToTransactionReceipt(hash)
+                            .then(receipt => {
+                                console.log(receipt);
+                                if (!receipt.errorMessage) {
+                                    resolve(receipt);
+                                } else {
+                                    reject(receipt.errorMessage);
+                                }
+                            })
+                            .catch(err => {
+                                alert('listenToTransactionReceipt' + err);
+                                reject(err);
+                            });
+                    } else {
+                        reject("No Transaction Hash Received");
+                    }
+                })
+                .catch(err => {
+                    alert(err.message)
                     resolve(err.errorMessage);
                 });
         });
@@ -300,7 +295,7 @@ export const buyProduct = async function (i,value) {
                         hash = res;
                     }
                     if (hash) {
-                        window.nervos.listeners
+                        cita.listeners
                             .listenToTransactionReceipt(hash)
                             .then(receipt => {
                                 console.log(receipt);
@@ -319,7 +314,7 @@ export const buyProduct = async function (i,value) {
                     }
                 })
                 .catch(err => {
-                    alert('buyProduct fail' + err);
+                    alert(err.message)
                     resolve(err.errorMessage);
                 });
         });
@@ -334,7 +329,6 @@ export const checkWalkout = async function () {
                 .methods.checkWalkout()
                 .send(tx)
                 .then(res => {
-                    alert('checkWalkout suc' + JSON.stringify(res));
                     let hash;
                     if (JSON.stringify(res).indexOf("hash") !== -1) {
                         hash = res.hash;
@@ -342,7 +336,8 @@ export const checkWalkout = async function () {
                         hash = res;
                     }
                     if (hash) {
-                        window.nervos.listeners
+                        alert('准备出去啦,出门前再看看主人！=￣ω￣=');
+                        cita.listeners
                             .listenToTransactionReceipt(hash)
                             .then(receipt => {
                                 console.log(receipt);
@@ -361,7 +356,7 @@ export const checkWalkout = async function () {
                     }
                 })
                 .catch(err => {
-                    alert('checkWalkout fail' + err);
+                    alert(err.message)
                     resolve(err.errorMessage);
                 });
         });
@@ -376,7 +371,7 @@ export const backHome = async function () {
                 .methods.backHome()
                 .send(tx)
                 .then(res => {
-                    alert('backHome suc' + JSON.stringify(res));
+                    // alert('backHome suc' + JSON.stringify(res));
                     let hash;
                     if (JSON.stringify(res).indexOf("hash") !== -1) {
                         hash = res.hash;
@@ -384,7 +379,8 @@ export const backHome = async function () {
                         hash = res;
                     }
                     if (hash) {
-                        window.nervos.listeners
+                        alert('我回来啦！当前路段有些拥挤 要等等才能看到我呢 =￣ω￣=');
+                        cita.listeners
                             .listenToTransactionReceipt(hash)
                             .then(receipt => {
                                 console.log(receipt);
@@ -403,7 +399,7 @@ export const backHome = async function () {
                     }
                 })
                 .catch(err => {
-                    alert('checkWalkout fail' + err);
+                    alert(err.message)
                     resolve(err.errorMessage);
                 });
         });

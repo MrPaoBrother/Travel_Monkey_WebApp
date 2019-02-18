@@ -11,7 +11,7 @@ const {
 const Quilt = () => (
     <picture>
         <source srcSet={quilt} media={pc_media}/>
-        <img src={quilt_m} className="bg_quilt"/>
+        <img src={quilt_m} className="bg_quilt" alt="quilt" />
     </picture>
 
 )

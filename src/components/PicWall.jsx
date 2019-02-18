@@ -3,19 +3,12 @@ import pic_wall from '../images/pic-wall-bg.png'
 
 import pic_wall_m from '../images/pic_wall_m.png'
 import {Link} from 'react-router-dom'
-import {simpleStoreContract} from '../simpleStore'
-
-import modalStyle from '../modalStyle'
-
-import nervos from '../nervos'
 
 import Modal from 'react-modal';
-import axios from "axios";
-import bag from "../images/bag.png";
-import bag_m from "../images/bag_m.png";
 import connect from "react-redux/es/connect/connect";
 
 require('./style/pic_wall.css')
+// apiAddress 后期可能用到
 const {
     apiAddress, pc_media
 } = require('../config')
@@ -43,25 +36,25 @@ const Pic = ({pic}) => {
             {/*<span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>*/}
 
             {/*<Link to={`/show/${time}`}>*/}
-            <img src={pic} className="pic"/>
+            <img src={pic} className="pic" alt="" />
             {/*</Link>*/}
         </div>
     )
 }
 
-const Pic_l = ({time, text, pic, hasYearLabel}) => {
-    const _time = new Date(+time)
-    return (
-        <div className="pic-bg_l">
-            {/*{hasYearLabel ? <div className="list_record_year">{_time.getFullYear()}</div> : null}*/}
-            <span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>
+// const Pic_l = ({time, text, pic, hasYearLabel}) => {
+//     const _time = new Date(+time)
+//     return (
+//         <div className="pic-bg_l">
+//             {/*{hasYearLabel ? <div className="list_record_year">{_time.getFullYear()}</div> : null}*/}
+//             <span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>
 
-            <Link to={`/show/${time}`}>
-                <img src={pic}/>
-            </Link>
-        </div>
-    )
-}
+//             <Link to={`/show/${time}`}>
+//                 <img src={pic}/>
+//             </Link>
+//         </div>
+//     )
+// }
 
 class PicWall extends React.Component {
     constructor() {
@@ -112,7 +105,7 @@ class PicWall extends React.Component {
             <div>
                 <picture>
                     <source srcSet={pic_wall} media={pc_media}/>
-                    <img src={pic_wall_m} className="pic_wall_bg_l ui_button" onClick={this.openModal}/>
+                    <img src={pic_wall_m} className="pic_wall_bg_l ui_button" onClick={this.openModal} alt="" />
                 </picture>
                 <Modal
                     isOpen={this.state.modalIsOpen}
@@ -122,6 +115,7 @@ class PicWall extends React.Component {
                     contentLabel="照片墙"
                 >
                     <div className="pic_wall-bg">
+                        <span>相册，点击相片退出</span>
                         <div className="pic-container" onClick={this.closeModal}>
                             {this.props.picWall.map((pic, idx) => (
                                 <Pic
@@ -135,8 +129,6 @@ class PicWall extends React.Component {
             </div>
 
         )
-
-
     }
 }
 

@@ -4,14 +4,7 @@ import monkey_ from '../images/bit_0_1.png'
 import monkeyNaked from '../images/bit.png'
 
 import './style/monkey.css'
-import tree_noFruit from "../images/tree_nofruit.png";
-import tree_m from "../images/tree_m.png";
 import connect from "react-redux/es/connect/connect";
-
-
-const {
-    pc_media
-} = require('../config')
 
 
 class Monkey extends React.Component {
@@ -41,11 +34,11 @@ class Monkey extends React.Component {
             )
         } else if (this.props.bag.length === 0) {
             return (
-                <img className="bg_bit" src={monkeyNaked}/>
+                <img className="bg_bit" src={monkeyNaked} alt="bg_bit" />
             )
         } else {
             return (
-                <img className="bg_bit" src={this.state.action ? monkey : monkey_}/>
+                <img className="bg_bit" src={this.state.action ? monkey : monkey_} alt="bg_bit" />
             );
         }
 
