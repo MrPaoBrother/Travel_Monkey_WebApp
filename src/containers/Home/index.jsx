@@ -58,7 +58,8 @@ class Home extends React.Component {
         this._checkLoginStatus();
     }
     _loadData() {
-        setInterval(() => this._refreshStatus(), 5000)
+        alert("主人 我正在工作呢, 待会儿可能去找小熊玩呢!")
+        setInterval(() => this._refreshStatus(), 15000)
         if (this.props.monkey.state === true) {
             let timeToGo = Math.floor(Math.random() * 10 + 10) * 1000;
             setTimeout(() => {
