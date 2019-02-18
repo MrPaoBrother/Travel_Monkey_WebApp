@@ -10,7 +10,7 @@ const {
 const Bed = () => (
     <picture>
         <source srcSet={bed} media={pc_media} />
-        <img src={bed_m} className="bg_bed"/>
+        <img src={bed_m} className="bg_bed" alt="我的床" />
     </picture>
 
 )

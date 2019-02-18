@@ -1,4 +1,4 @@
-const nervos = require('../nervos')
+const cita = require('../cita')
 const {
     abi,
     bytecode
@@ -19,7 +19,7 @@ nervos.appchain.getBlockNumber().then(current => {
 }).then(txRes => {
     if (txRes.hash) {
         // get transaction receipt
-        return nervos.listeners.listenToTransactionReceipt(txRes.hash)
+        return cita.listeners.listenToTransactionReceipt(txRes.hash)
     } else {
         throw new Error("No Transaction Hash Received")
     }

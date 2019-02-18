@@ -398,7 +398,7 @@
         width: 100%;
         height: 100%;
         background: url("../../images/market_bag_m.jpg") no-repeat;
-        background-size: cover;
+        background-size: 92vw;
     }
 
     .goods-container {
@@ -408,14 +408,17 @@
         display: -ms-flexbox;
         display: flex;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        margin: 91px 0;
+        flex-wrap: wrap;margin: 29vw 0;
+
+
     }
 
     .goods-bg {
         flex-direction: column;
         width: 46%;
-        padding: 8px 27px 6px 54px;
+        min-height: 29vw;
+        padding: 0vh 4vw 6vw 12vw;
+
         align-items: center;
         align-self: center;
         display: -ms-flexbox;
@@ -425,12 +428,13 @@
     }
 
     .goods-pic-box {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         align-items: center;
         justify-items: center;
         /* align-self: center; */
-        height: 64px;
+
+        height: 16vw;
     }
 
     .goods-pic {
@@ -451,7 +455,7 @@
         width: 100%;
         height: 100%;
         background: url("../../images/market_bag_m.jpg") no-repeat;
-        background-size: cover;
+        background-size: 92vw;
     }
 
     .vip-bg {
@@ -493,7 +497,7 @@
 
     .market-close-btn {
         position: absolute;
-        top: 130.5vw;
+        top: 133vw;
         left: 50%;
         transform: translate(-50%, -50%);
     }

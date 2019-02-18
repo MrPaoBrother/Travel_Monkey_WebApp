@@ -9,8 +9,6 @@ import goods2 from '../images/goods2.png'
 import goods3 from '../images/goods3.png'
 import goods4 from '../images/goods4.png'
 import Modal from 'react-modal';
-import {simpleStoreContract} from '../simpleStore'
-import bg from "../images/bg.png";
 import connect from "react-redux/es/connect/connect";
 
 
@@ -22,6 +20,7 @@ require('./style/bag.css')
 
 const bagModalStyle = {
     content: {
+        padding: "4vw",
         top: '50%',
         left: '50%',
         width: '100%',
@@ -64,7 +63,7 @@ class Bag extends React.Component {
         return (
             <div key={i} className="goods-bg">
                 <div className="goods-pic-box">
-                    <img src={goodsPic} className="goods-pic"/>
+                    <img src={goodsPic} className="goods-pic" alt="" />
                 </div>
                 <span className="goods-price">{goods.price} X{goods.count}</span>
             </div>
@@ -76,7 +75,7 @@ class Bag extends React.Component {
             <React.Fragment>
                 <picture>
                     <source srcset={bag} media={pc_media}/>
-                    <img src={bag_m} className="bag-button ui_button" onClick={this.openModal}/>
+                    <img src={bag_m} className="bag-button ui_button" onClick={this.openModal} alt="" />
                 </picture>
 
                 <Modal

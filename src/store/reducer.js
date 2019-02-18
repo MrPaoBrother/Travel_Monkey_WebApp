@@ -6,7 +6,7 @@ const initState = {
         gene: '',
         mood: '',
         banana: 0,
-        state: 0,
+        state: false,
         owner: ''
     }, //猴子状态
     treeFruits: 0, //树上钱

@@ -1,12 +1,9 @@
 import React from 'react'
 import pc from '../images/pc.png'
 import pc_m from '../images/pc_m.png'
-import pc_screen from '../images/pc.png'
-import modalStyle from '../modalStyle'
 import './style/pc.css'
 import Modal from "react-modal";
 import axios from "axios";
-import banana_m from "../images/banana_m.png";
 
 const {
     apiAddress, pc_media
@@ -59,7 +56,7 @@ class PC extends React.Component {
             <div>
                 <picture>
                     <source srcSet={pc} media={pc_media}/>
-                    <img src={pc_m} className="bg_pc" onClick={this.openModal}/>
+                    <img src={pc_m} className="bg_pc" onClick={this.openModal} alt="" />
                 </picture>
                 <Modal
                     isOpen={this.state.modalIsOpen}
@@ -67,7 +64,7 @@ class PC extends React.Component {
                     style={pcModalStyle}
                     contentLabel=""
                 >
-                    <img src={this.state.pic} className="pc" onClick={this.closeModal}/>
+                    <img src={this.state.pic} className="pc" onClick={this.closeModal} alt="" />
                 </Modal>
             </div>
         )

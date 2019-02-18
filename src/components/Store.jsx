@@ -1,5 +1,4 @@
 import React from 'react'
-import {simpleStoreContract} from '../simpleStore'
 
 require('./tree.css')
 

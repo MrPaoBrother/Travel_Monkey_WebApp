@@ -1,6 +1,5 @@
 import React from 'react'
 
-import logo from '../images/logo.svg'
 import Name from './Name'
 
 import './style/header.css'
