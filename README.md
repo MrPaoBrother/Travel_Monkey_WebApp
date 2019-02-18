@@ -30,12 +30,9 @@
 
 * [node安装](https://nodejs.org/en/download/)
 * [npm安装](https://www.npmjs.com/)
-* [Neuron安装](https://github.com/cryptape/neuron-android/releases/download/0.6.5/neuron_v0.6.5.181108.apk)
+* [Neuron安装](https://github.com/cryptape/cyton-android/releases/download/0.7.1/cyton_v0.7.1.190121_cryptape.apk)
 
-ps. 也能通过二维码下载
-
-<img width="30%" height="30%" src="readme_images/code.jpeg" />
-
+ps. 钱包[项目地址](https://github.com/cryptape/cyton-android)
 
 ## Nervos Appchain上部署合约
 
@@ -78,9 +75,10 @@ $ node deploy.js
    
    ```js
     const config = {
-        chain: 'http://121.196.200.225:1337',
+        chain: 'https://node.cryptape.com',
         contractAddress: '0x9Cf7a2062AE3b87036cF04FE9555d4e4ddCed5ca',
-        apiAddress:'http://58.87.125.190:9999',
+        apiAddress:'http://139.159.241.50:8888',
+        privateKey: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
         pc_media: "(min-width:31em)",
     }
         
@@ -92,6 +90,8 @@ $ node deploy.js
 
 
 ## 运行
+
+* 对钱包熟悉的朋友可以用cyton钱包访问[这里](http://139.159.241.50:3000)
 
 * 项目克隆到本地
 
