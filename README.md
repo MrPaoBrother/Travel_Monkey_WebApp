@@ -3,20 +3,20 @@
 ## Travel_Monkey介绍
 * 游戏简介
 
-    **TravelMonkey**(旅行猴),是一款基于```Nervos```的```AppChain```开发的一款纯手绘区块链佛性游戏，travel monkey也是游戏的主人公，一只喜欢旅行的猴子，调皮的小猴子就像家长们的孩子一样，喜欢偷偷背着主人做事，喜欢发脾气甚至离家出走，为了让自己的孩子开心，玩家可以买各种东西讨好自己的宠物。小猴子怕主人担心，在旅途中也会给主人寄回来明信片，小猴子在旅途中会认识各种各样的好朋友，也有可能会带回家里面做客，下面我们看下具体玩法。
+    **TravelMonkey**(旅行猴),是一款基于```Nervos```的```Cita链```开发的一款纯手绘区块链佛性游戏，travel monkey也是游戏的主人公，一只喜欢旅行的猴子，调皮的小猴子就像家长们的孩子一样，喜欢偷偷背着主人做事，喜欢发脾气甚至离家出走，为了让自己的孩子开心，玩家可以买各种东西讨好自己的宠物。小猴子怕主人担心，在旅途中也会给主人寄回来明信片，小猴子在旅途中会认识各种各样的好朋友，也有可能会带回家里面做客，下面我们看下具体玩法。
 
 
-* Nervos AppChain简介
+* Nervos Cita简介
 
-    **Nervos AppChain** 是开源免费的商业级应用公链解决方案，采用强力节点作为记账基础设施，提供高性能的计算和应用或行业共识，支持多链协议。AppChain 产品栈除了区块链内核 CITA 外，还包含 DApp 手机钱包 Neuron 、区块链浏览器 Microscope 以及全平台 SDK。 Nervos AppChain 主要为 B 端用户解决「搭建区块链困难」和「开发区块链应用困难」这两个区块链落地的核心问题。
+    **Nervos Cita** CITA（ Cryptape Inter-enterprise Trust Automation ）是一个面向企业级应用的支持智能合约的区块链框架， 旨在为企业级区块链应用提供一个稳固、高效、灵活、可适应未来的运行平台。CITA 将区块链节点的必要功能解耦为六个微服务：RPC，Auth，Consensus，Chain，Executor，Network。各组件之间通过消息总线交换信息相互协作。通过配置和定制相应的服务，CITA 能够满足企业级用户的全部需要。
 
 > 注意: 该文档针对对区块链有一定了解的开发者，且对智能合约有一定了解
 
-* Neuron 简介
+* Cyton 简介
 
-    **Neuron** 是一个 DApp 浏览器和一个支持 AppChain 和以太坊的区块链钱包。构建在 AppChain 或多个 AppChains 之上的 DApps 可以在 Neuron 中使用。用户可以通过区块链获得安全和无缝的交互体验。
+    **Cyton** Cyton是一个开源区块链钱包，支持以太坊和CITA。它支持以太网和CITA的大多数令牌，如ETH，ERC20，ERC721，还支持以太网和CITA的大多数DApp，如cryptokitties，Fomo3D，等
 
-* 游戏体验地址: http://www.yimixiaoyuan.top/ (ps. PC上无法运行，该版本专门为移动端设计,后面有具体的打开方法)
+* 游戏体验地址: http://139.159.241.50:3000 (ps. PC上无法运行，该版本专门为移动端设计,后面有具体的打开方法)
 
 ## 运行环境
 
@@ -30,13 +30,13 @@
 
 * [node安装](https://nodejs.org/en/download/)
 * [npm安装](https://www.npmjs.com/)
-* [Neuron安装](https://github.com/cryptape/cyton-android/releases/download/0.7.1/cyton_v0.7.1.190121_cryptape.apk)
+* [Cyton安装](https://github.com/cryptape/cyton-android/releases/download/0.7.1/cyton_v0.7.1.190121_cryptape.apk)
 
-ps. 钱包[项目地址](https://github.com/cryptape/cyton-android)
+> ps. 钱包[项目地址](https://github.com/cryptape/cyton-android/releases) 目前只支持安装
 
-## Nervos Appchain上部署合约
+## Nervos Cita上部署合约
 
-   * 在运行该项目前 我们先了解下怎么在Nervos的Appchain中部署合约, 该demo中所有内容都配置好了，
+   * 在运行该项目前 我们先了解下怎么在Nervos的Cita中部署合约, 该demo中所有内容都配置好了，
    如果只是想运行的用户可以直接跳到运行。
   
    
@@ -64,11 +64,11 @@ module.exports = {
 
    * 最后执行```deploy.js```文件完成部署:
    
-   ```bash
+```bash
 $ node deploy.js
 ```
    
-## Nervos Appchain上自定义配置
+## Nervos Cita上自定义配置
 
    * 之后我们在```Travel_Monkey_WebApp/src/config.js```文件中修改自己的配置信息以及
    使用哪条公链的信息,这里使用的是```http://121.196.200.225:1337```
@@ -119,7 +119,7 @@ Starting the development server...
 
 > 可能会看到一堆的warning， 没关系， 只要没有Error就行, 有一些是对依赖库版本的警告
 
-* 打开Neuron钱包,进入如下界面:
+* 打开Cyton钱包,进入如下界面:
 
 <img width="30%" height="30%" src="readme_images/Neuron.jpg" />
 
@@ -204,7 +204,7 @@ ps.保证手机和电脑在同一个局域网中
 
 * go_home() 新版本为了更好的和用户进行交互，新增强制让猴子回家功能
 
-## 相关优化([相比web版本](https://github.com/MrPaoBrother/Travel_Monkey/blob/master/README.md))
+## 相关优化
 
 ### 功能方面
    * 新增呼唤猴子回家功能
@@ -279,9 +279,9 @@ ps.保证手机和电脑在同一个局域网中
 
 ## 参考资料
 
-[1] [Nervos AppChain 文档](https://docs.nervos.org/nervos-appchain-docs/#/)
+[1] [Nervos Cita 文档](https://github.com/cryptape/cita)
 
-[2] [Nervos Neuron 钱包](https://mp.weixin.qq.com/s/U7JK_vpIzVLCwv99cmxPAA)
+[2] [Nervos Cyton 钱包](https://github.com/cryptape/cyton-android)
 
 
 
