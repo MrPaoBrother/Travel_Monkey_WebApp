@@ -91,7 +91,7 @@ $ node deploy.js
 
 ## 运行
 
-* 对钱包熟悉的朋友可以用cyton钱包访问[这里](http://139.159.241.50:3000)
+* 对钱包熟悉的朋友可以用cyton钱包访问 http://139.159.241.50:3000
 
 * 项目克隆到本地
 
@@ -121,10 +121,10 @@ Starting the development server...
 
 * 打开Cyton钱包,进入如下界面:
 
-<img width="30%" height="30%" src="readme_images/Neuron.jpg" />
+<img width="30%" height="30%" src="readme_images/cyton.png" />
 
 
-* 最后打开钱包中的浏览器运行 ```http://localhost:3000/``` 或者 图片中提到的体验地址: ```http://www.yimixiaoyuan.top/```
+* 最后打开钱包中的浏览器运行 ```http://localhost:3000/``` 或者 图片中提到的体验地址: ```http://139.159.241.50:3000```
 
 ps.保证手机和电脑在同一个局域网中
 
