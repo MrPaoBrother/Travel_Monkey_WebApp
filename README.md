@@ -221,61 +221,60 @@ ps.保证手机和电脑在同一个局域网中
 
 * 登录时会显示当前已经存在的猴子数量
 
-<img width="30%" height="30%" src="readme_images/0.jpeg" />
+<img width="30%" height="30%" src="readme_images/login.png" />
 
 * 领取猴子
 
-<img width="30%" height="30%" src="readme_images/1.jpeg" />
+<img width="30%" height="30%" src="readme_images/init_monkey.png" />
 
 
 * 游戏商城，点击物品直接购买
 
-<img width="30%" height="30%" src="readme_images/market.jpeg" />
+<img width="30%" height="30%" src="readme_images/shop.png" />
 
 
 * 玩家的背包
 
-<img width="30%" height="30%" src="readme_images/bag.jpeg" />
+<img width="30%" height="30%" src="readme_images/bag.png" />
 
 
 * 购买前的猴子
 
-<img width="30%" height="30%" src="readme_images/bit0.jpeg" />
+<img width="30%" height="30%" src="readme_images/init_monkey.png" />
 
 
 * 购买后猴子穿上了衣服
 
-<img width="30%" height="30%" src="readme_images/bit1.jpeg" />
+<img width="30%" height="30%" src="readme_images/monkey_with_cat.png" />
 
 
 * 香蕉树上有香蕉时，可以点击香蕉收割
 
-<img width="30%" height="30%" src="readme_images/tree1.jpeg" />
-
-* 香蕉被收割
-
-<img width="30%" height="30%" src="readme_images/tree2.jpeg" />
+<img width="30%" height="30%" src="readme_images/banana_catch.png" />
 
 * 可以通过充值获取更多香蕉
 
-<img width="30%" height="30%" src="readme_images/vip.jpeg" />
-
+<img width="30%" height="30%" src="readme_images/buy_banana.png" />
 
 * 小猴子想旅行了，支付一点旅费
 
-<img width="30%" height="30%" src="readme_images/goout.jpeg" />
+<img width="30%" height="30%" src="readme_images/monkey_want_out.png" />
 
-* 小猴子想回家了，支付一点旅费
+* 小猴子出去了,房间空无一人
 
-<img width="30%" height="30%" src="readme_images/gohome.jpeg" />
+<img width="30%" height="30%" src="readme_images/monkey_out.png" />
+
+* 小猴子想回家了/呼唤猴子回家
+
+<img width="30%" height="30%" src="readme_images/monkey_want_back.png" />
 
 * 小猴子旅行时寄回来的照片
 
-<img width="30%" height="30%" src="readme_images/picwall.jpeg" />
+<img width="30%" height="30%" src="readme_images/album.png" />
 
 * 小猴子在用电脑看什么
 
-<img width="30%" height="30%" src="readme_images/pc.jpeg" />
+<img width="30%" height="30%" src="readme_images/monkey_computer.png" />
 
 ## 参考资料
 
