@@ -14,7 +14,7 @@
 
 * Cyton 简介
 
-    **Cyton** Cyton是一个开源区块链钱包，支持以太坊和CITA。它支持以太网和CITA的大多数令牌，如ETH，ERC20，ERC721，还支持以太网和CITA的大多数DApp，如cryptokitties，Fomo3D，等
+    **Cyton** Cyton是一个开源区块链钱包，支持以太坊和CITA。它支持以太网和CITA的大多数令牌，如ETH，ERC20，ERC721，还支持以太网和CITA的大多数DApp，如cryptokitties，Fomo3D等
 
 * 游戏体验地址: http://139.159.241.50:3000 (ps. PC上无法运行，该版本专门为移动端设计,后面有具体的打开方法)
 
